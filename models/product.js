@@ -1,11 +1,11 @@
-var mongoose = require('mongoose'); //importing mongoose
-//creating another variable called schema which uses mongoose schema object
+var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-//schema is blue prints
+
 var schema = new Schema({
-  imagePath:{type:String , required:true},
-  title:{type:String , required:true},
-  description:{type:String , required:true}
+    imagePath: {type: String, required: true},
+    title: {type: String, required: true},
+    description: {type: String, required: true},
+    price: {type: Number, required: true}
 });
 
-module.exports = mongoose.model('Product',schema);
+module.exports = mongoose.model('Product', schema);
